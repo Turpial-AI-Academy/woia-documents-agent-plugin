@@ -1,42 +1,11 @@
 # woia-documents
 
-Portable Agent Plugin for Shared woia-documents capability under accepted source and authority contracts..
+Version 0.5.0. Durable document identity, verified bytes and version lineage under access, hold and retention controls.
 
-## Capability
+Portable entry: [Agent Skill](skills/woia-documents/SKILL.md). Source contracts derive from Real Estate `eb0a7278188b2f9968e21ed4299f08184d864cac`.
 
-~~~text
-DISCOVER -> DECIDE -> IMPLEMENT -> VALIDATE -> REPORT
-~~~
+Run `mise run bootstrap`, `mise run doctor`, `pnpm test`, `pnpm run ci:fast`. Central certification: Ecosystem v0.5.4 `mise run plugin:certify-thin --repo <absolute-path>`.
 
-The plugin adapts to the repository it operates on without requiring the consumer to adopt WOIA's authoring toolchain.
+Local helpers operate only on provided data. No backend, DBMS, external adapter, authority policy, fees, account or legal applicability is selected. Adapter qualification and Operator E2E remain NOT_RUN; no Production Ready claim.
 
-## Portable package
-
-~~~text
-plugin.json
-README.md
-CHANGELOG.md
-LICENSE
-skills/**
-# optional source diagnostic when retained by the repository
-CHECKSUMS.sha256
-~~~
-
-`CHECKSUMS.sha256` is optional source evidence, not a required portable/release artifact.
-
-Add `mcp.json` only if the capability genuinely requires MCP.
-
-## Consumer requirements
-
-Document only genuine capability/runtime requirements here. Do not list maintenance Node/pnpm/Mise/Docker unless the portable capability itself truly needs them.
-
-## Development
-
-~~~text
-mise install
-mise run bootstrap
-mise run doctor
-mise run ci:fast
-mise run ci:extended
-mise run release:check
-~~~
+An explicitly bound local backing-store helper stores/reads/lists/searches immutable versioned bytes and performs exact approved disposal. Synthetic regression verifies byte integrity, organization isolation, permission denial, exclusive duplicate protection and hold/retention gates. Only a caller-authenticated private context may bind a root; external file/calendar/signature adapters remain unqualified. Local filesystem crash recovery, hostile shared storage and production backup qualification remain NOT_RUN.
