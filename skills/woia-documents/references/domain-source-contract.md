@@ -30,4 +30,3 @@ Move/rename changes FilePlacement/provider path, not Document identity, business
 ### Retention/access
 
 Legal/competent policy determines classification, hold and disposal. The backing provider, cache, extraction/index and export must enforce the same applicable restrictions. A backup or copied file does not create broader access.
-
