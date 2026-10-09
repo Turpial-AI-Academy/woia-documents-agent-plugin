@@ -2,7 +2,7 @@
 
 Version 0.5.7. Durable document identity, verified bytes and version lineage under access, hold and retention controls.
 
-Portable entry: [Agent Skill](skills/woia-documents/SKILL.md). Source contracts derive from Real Estate `eb0a7278188b2f9968e21ed4299f08184d864cac`.
+Portable entry: [Agent Skill](skills/woia-documents/SKILL.md).
 
 Run `mise run bootstrap`, `mise run doctor`, `pnpm test`, `pnpm run ci:fast`. Central certification: Ecosystem v0.5.7 `mise run plugin:certify-thin --repo <absolute-path>`.
 
